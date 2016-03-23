@@ -31,7 +31,48 @@ html
             input(type='submit', value='Clear Page', onClick="window.location.reload()", class="button")
 canvas(id="myCanvas", resize="true")
 
-
+    .wrap
+      .head
+        .burger
+          .burger_line
+          .burger_line
+          .burger_line
+        .center
+          .head_left
+            h5 Alexandr Volodin
+            .head_left_img
+          .head_right
+            .head_right_img
+            h5 Me
+      .body
+        .left
+          figure.s-message
+            figcaption
+              span Alexandr
+              | 12:35
+              .dot
+            p Hi, dude! How are you?)
+          figure.left-message
+            figcaption
+              span Alexandr
+              | 12:38
+              .dot
+            p Alexandr left conversation
+        .right
+          figure.u-message
+            figcaption
+              .dot_green
+              span Me
+              | 12:36
+            p Where's my money?
+      .footer
+        .sending-message
+          button
+            | SEND
+            svg#send-ico(viewbox='0 0 26.5 22.9')
+              polygon(points='5.8,0 26.5,12.4 5.3,22.9 6.6,14.8 0,10.4 11.3,10.4 6.4,7.7 ')
+          textarea.message-input(type='text', placeholder='Type message...')
+      .line
 
 
 
