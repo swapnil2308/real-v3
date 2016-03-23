@@ -25,8 +25,8 @@ html
         label Opacity
             input(type="range", min="0", max="255", value="255", id="opacity")
             input(id="words", type="text", name="user")
-            input(id="inputWordsID", value="Submit", class="button")
-            input(id="doItID", value="Create Image", class="button")
+            input(id="inputWordsID", value="Submit", type='submit')
+            input(id="doItID", value="Create Image", type='submit')
             div(id="imageID")
             input(type='submit', value='Clear Page', onClick="window.location.reload()", class="button")
 canvas(id="myCanvas", resize="true")
